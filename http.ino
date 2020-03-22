@@ -51,7 +51,7 @@ void http_loop() {
     client.println("HTTP/1.1 200 OK");
     client.println("Content-Type: text/html");
     client.println(""); //  do not forget this one
+    client.println("<!-- SNMP OID#.1.3.6.1.4.1.2566.10.2.2.1.20.0.2 -->");
     client.print(relayState ? "on" : "off");
   }
 }
-
